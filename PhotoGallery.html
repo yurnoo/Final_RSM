@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Photo Gallery</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="photo.css" />
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+ .picture img {
+     width: 300px;
+     height: 200px;
+     border: 4px solid #ff0000;
+     padding: 10px;
+     margin: 45px;
+   }
+</style>
+<body>
+<!-- Navigation (Sits on top) -->
+<div class="w3-bar w3-orange w3-card w3-left-align w3-large">
+<a href="Landingpage.html" class="w3-bar-item w3-button">Travelgo</a>
+
+<!-- Right-sided navbar links. Hide them on small screens -->
+<div class="w3-right w3-hide-small">
+<a href="Home.php" class="w3-bar-item w3-button">Home</a>
+<a href="About.html" class="w3-bar-item w3-button">About</a>
+<a href="Artikel.html" class="w3-bar-item w3-button">Artikel</a>
+<a href="PhotoGallery.html" class="w3-bar-item w3-button"  style="background-color:lavender;">Photo Gallery</a>
+<a href="Videogallery.html" class="w3-bar-item w3-button">Video Gallery</a>
+<a href="ContactUs.php" class="w3-bar-item w3-button">Contact Us</a>
+</div>
+</div>
+
+<h2 style="text-align:center">Photo Gallery</h2>
+<p style="text-align:center">Jadikan hidupmu lebih berwarna</p>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="gambar/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="gambar/gunung.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="gambar/jawa.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="gambar/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="gambar/5.jpg" style="width:100%">
+  </div>
+   
+   <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="gambar/5.png" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="gambar/3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bukit Teletubbies, Tana Toraja, Sulawesi Selatan.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gambar/gunung.jpg" style="width:100%" onclick="currentSlide(2)" alt="Labuan Bajo, NTT">
+    </div>
+    <div class="column">
+    <img class="demo cursor" src="gambar/jawa.jpg" style="width:100%"  onclick="currentSlide(3)" alt="Karimun Jawa, Jawa Tengah">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gambar/2.jpg" style="width:100%"  onclick="currentSlide(4)" alt="Air Terjun Mandin Damar, Kalimantan Selatan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gambar/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Pantai Ora, Seram Utara">
+  </div>
+   <div class="column">
+      <img class="demo cursor" src="gambar/5.png" style="width:100%" onclick="currentSlide(6)" alt="Pantai Pintu Kota, Desa Nusaniwe, Ambon, Maluku ">
+  </div>
+</div>
+<hr color="#A9A9A9"; size="5px" width="100%"> 
+
+<body>
+<div class="picture">
+  <img src="gambar/lihat3.jpg"><img src="gambar/lihat1.jpg">
+  <img src="gambar/image1.jpg"><img src="gambar/image3.jpg">
+  <img src="gambar/image4.jpg"><img src="gambar/image2.jpg">
+  <img src="gambar/image5.jpg"><img src="gambar/image6.jpg">
+</div>
+</body>
+
+<hr color="#A9A9A9"; size="5px" width="100%"> 
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+  <h5>Follow Us</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://accounts.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity"></i>
+    <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="Landingpage.html" target="_blank" class="w3-hover-text-green">Travelgo</a></p>
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
